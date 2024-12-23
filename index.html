@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Don't worry</title>
+        <style>
+        .shapes {
+            margin:0;
+            position:fixed;
+            top:0;
+            left:0;
+        }
+
+@media screen and (max-width: 800px) {
+
+}
+        </style>
+    </head>
+    <body>
+        <section class="shapes"></section>
+        <script>
+            // 이미지 파일 이름 배열
+            var trashPieces = [
+            "trash1.png", "trash2.png", "trash3.png", "trash4.png", "trash5.png",
+            "trash6.png", "trash7.png", "trash8.png", "trash9.png", "trash10.png",
+            "trash11.png", "trash12.png", "trash13.png", "trash14.png", "trash15.png",
+            "trash16.png", "trash17.png"
+            ];
+            // 각 trashPiece를 변수에 할당 (예: trash1_piece, trash2_piece 등)
+            trashPieces.forEach((piece, index) => {
+            window[`trash${index + 1}_piece`] = piece; // "trash1_piece", "trash2_piece" 등으로 할당
+            });
+
+            var trashcan = "trashcan.png"
+        </script>
+        <script type="text/javascript" src="matter.min.b6a46d5e3a65.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+        <script type="text/javascript" src="sketch.js"></script>
+
+    </body>
+</html>
